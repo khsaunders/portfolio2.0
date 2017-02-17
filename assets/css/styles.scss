@@ -1,0 +1,70 @@
+
+//color variables//
+$white: white;
+$tangerine: #E2492F;
+$black: #141414;
+
+//font variables//
+$mainFont: Nunito, sans-serif;
+$secondFont: Montserrat, sans-serif;
+
+body{
+  font-family: $mainFont;
+  font-color: $black;
+  a{
+    text-decoration: none;
+    color: $black;
+    :visited{
+      color: $black;
+    }
+  }
+
+header{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-shadow: 0 0 3px #888;
+    padding: 1% 2%;
+    .headerLefthandInfo{
+      width: 18%;
+      display: inline-block;
+      position: relative;
+      float: left;
+      font-weight: 600;
+      #headerCartoon{
+        width: 4.5em;
+        margin: 1% 1% 2% 2%;
+      }
+      .headerName{
+        float: right;
+        position: relative;
+        display: inline-block;
+        margin-top: 10%;
+      }
+    }
+    .headerNavLinks{
+      position: relative;
+      float: right;
+      margin: 3% 0 2% 0;
+      font-color: $black;
+      a{
+          text-decoration: none;
+          color: $black;
+          margin: 0 3%;
+          :active{
+            color: $black;
+          }
+          :visited{
+            color: $black;
+          }
+      }
+      #headerContactBtn{
+        color: $white;
+        background-color: $tangerine;
+        padding: .5% 3%;
+      }
+    }
+}
+}
+
+@import "partials/projectPages";
+@import "partials/homePage.scss";

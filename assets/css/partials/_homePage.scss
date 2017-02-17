@@ -1,0 +1,18 @@
+#homePage{
+  font-family: $mainFont;
+  .navIcons{
+    content-align: center;
+    background-color: $tangerine;
+    width: 1%;
+    padding: 1%;
+    border-radius: 50%;
+    font-size: 1em;
+    margin: 3% 2%;
+    a{
+      color: $white;
+      :visited{
+        color: $white;
+      }
+      }
+  }
+}

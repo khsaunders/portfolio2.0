@@ -7,10 +7,17 @@ body {
     body a :visited {
       color: #141414; }
   body header {
+    width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
     box-shadow: 0 0 3px #888;
-    padding: 1% 2%; }
+    padding: 1% 2%;
+    position: fixed;
+    margin: 0 auto; }
+    body header #h1Name {
+      font-weight: 700; }
+    body header #h3Desc {
+      font-weight: 400; }
     body header .headerLefthandInfo {
       width: 18%;
       display: inline-block;
@@ -28,7 +35,7 @@ body {
     body header .headerNavLinks {
       position: relative;
       float: right;
-      margin: 3% 0 2% 0;
+      margin: 3% 9% 2% 0;
       font-color: #141414; }
       body header .headerNavLinks a {
         text-decoration: none;
@@ -42,6 +49,11 @@ body {
         color: white;
         background-color: #E2492F;
         padding: .5% 3%; }
+  body footer {
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    text-align: center; }
 
 #homePage {
   font-family: Nunito, sans-serif; }

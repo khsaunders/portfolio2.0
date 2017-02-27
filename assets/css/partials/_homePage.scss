@@ -1,18 +1,45 @@
-#homePage{
-  font-family: $mainFont;
-  .navIcons{
-    content-align: center;
-    background-color: $tangerine;
-    width: 1%;
-    padding: 1%;
-    border-radius: 50%;
-    font-size: 1em;
-    margin: 3% 2%;
-    a{
-      color: $white;
-      :visited{
-        color: $white;
-      }
-      }
+#homePageWrapper{
+  font-family: $secondFont;
+  font-weight: 300;
+  letter-spacing: 1px;
+  .aboutMe{
+    width: 80%;
+    padding: 12% 5% 5% 5%;
+    margin: auto;
+    position: relative;
+    text-align: center;
   }
+  .aboutMeLink{
+    color: $tangerine;
+    margin-top: 3%;
+  }
+  #homePageProjects{
+    width: 87%;
+    margin: auto;
+    display: block;
+      .leftImageContainer{
+        width: 40%;
+        display: inline-block;
+          #peopleExchanging{
+            border-radius: 1px;
+            width: 35.5em;
+            margin-right: 1% auto;
+          }
+      }
+    .rightImageContainer{
+      width: 50%;
+      ul{
+        float: right;
+        margin-right: 10%;
+      li{
+        position: relative;
+        margin-bottom: 1.5%;
+        .homePageProjects--img{
+          width: 23em;
+          margin: .65% auto;
+        }
+      }
+    }
+  }
+    }
 }

@@ -6,68 +6,104 @@ body {
     color: #141414; }
     body a :visited {
       color: #141414; }
-  body header {
-    width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    box-shadow: 0 0 3px #888;
-    padding: 1% 2%;
-    position: fixed;
-    margin: 0 auto; }
-    body header #h1Name {
-      font-weight: 700; }
-    body header #h3Desc {
-      font-weight: 400; }
-    body header .headerLefthandInfo {
-      width: 18%;
-      display: inline-block;
-      position: relative;
-      float: left;
-      font-weight: 600; }
-      body header .headerLefthandInfo #headerCartoon {
-        width: 4.5em;
-        margin: 1% 1% 2% 2%; }
-      body header .headerLefthandInfo .headerName {
-        float: right;
-        position: relative;
-        display: inline-block;
-        margin-top: 10%; }
-    body header .headerNavLinks {
-      position: relative;
-      float: right;
-      margin: 3% 9% 2% 0;
-      font-color: #141414; }
-      body header .headerNavLinks a {
-        text-decoration: none;
-        color: #141414;
-        margin: 0 3%; }
-        body header .headerNavLinks a :active {
-          color: #141414; }
-        body header .headerNavLinks a :visited {
-          color: #141414; }
-      body header .headerNavLinks #headerContactBtn {
-        color: white;
-        background-color: #E2492F;
-        padding: .5% 3%; }
-  body footer {
-    bottom: 0;
-    width: 100%;
-    position: fixed;
-    text-align: center; }
 
-#homePage {
-  font-family: Nunito, sans-serif; }
-  #homePage .navIcons {
-    content-align: center;
-    background-color: #E2492F;
-    width: 1%;
-    padding: 1%;
-    border-radius: 50%;
-    font-size: 1em;
-    margin: 3% 2%; }
-    #homePage .navIcons a {
-      color: white; }
-      #homePage .navIcons a :visited {
-        color: white; }
+#header {
+  width: 100%;
+  background-color: white;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  box-shadow: 0 0 3px #888;
+  padding: 1% 2%;
+  position: fixed;
+  margin: 0 auto;
+  z-index: 10;
+  letter-spacing: 1px; }
+  #header #h1Name {
+    font-weight: 700; }
+  #header #h3Desc {
+    font-weight: 400; }
+  #header .headerLefthandInfo {
+    width: 18%;
+    display: inline-block;
+    position: relative;
+    float: left;
+    font-weight: 600; }
+    #header .headerLefthandInfo #headerCartoon {
+      width: 4.5em;
+      margin: 1% 1% 2% 2%; }
+    #header .headerLefthandInfo .headerName {
+      float: right;
+      position: relative;
+      display: inline-block;
+      margin-top: 10%; }
+  #header .headerNavLinks {
+    display: inline-block;
+    position: relative;
+    float: right;
+    margin: 3% 5% 2% 0;
+    font-color: #141414; }
+    #header .headerNavLinks ul {
+      width: 100%;
+      float: right; }
+      #header .headerNavLinks ul li {
+        display: inline-block; }
+        #header .headerNavLinks ul li a {
+          text-decoration: none;
+          color: #141414;
+          margin: 0 3%; }
+          #header .headerNavLinks ul li a :active {
+            color: #141414; }
+          #header .headerNavLinks ul li a :visited {
+            color: #141414; }
+    #header .headerNavLinks #headerContactBtn {
+      color: white;
+      background-color: #E2492F;
+      padding: 10%;
+      border-radius: 1px; }
+
+footer {
+  bottom: -.05em;
+  width: 100%;
+  height: 3.5em;
+  position: absolute;
+  text-align: center;
+  z-index: 0;
+  margin-top: 20%; }
+
+#homePageWrapper {
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px; }
+  #homePageWrapper .aboutMe {
+    width: 80%;
+    padding: 12% 5% 5% 5%;
+    margin: auto;
+    position: relative;
+    text-align: center; }
+  #homePageWrapper .aboutMeLink {
+    color: #E2492F;
+    margin-top: 3%; }
+  #homePageWrapper #homePageProjects {
+    width: 87%;
+    margin: auto;
+    display: block; }
+    #homePageWrapper #homePageProjects .leftImageContainer {
+      width: 40%;
+      display: inline-block; }
+      #homePageWrapper #homePageProjects .leftImageContainer #peopleExchanging {
+        border-radius: 1px;
+        width: 35.5em;
+        margin-right: 1% auto; }
+    #homePageWrapper #homePageProjects .rightImageContainer {
+      width: 50%; }
+      #homePageWrapper #homePageProjects .rightImageContainer ul {
+        float: right;
+        margin-right: 10%; }
+        #homePageWrapper #homePageProjects .rightImageContainer ul li {
+          position: relative;
+          margin-bottom: 1.5%; }
+          #homePageWrapper #homePageProjects .rightImageContainer ul li .homePageProjects--img {
+            width: 23em;
+            margin: .65% auto; }
 
 /*# sourceMappingURL=styles.css.map */

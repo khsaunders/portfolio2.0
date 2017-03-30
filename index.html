@@ -8,22 +8,109 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
+    <header id="header">
+        <div class="grid grid-pad">
+          <div class="headerLefthandInfo">
+            <div class="col-1-5">
+                <div class="content">
+                    <img src="assets/images/kaitlinCartoonOrange.png" id="headerCartoon">
+                    <!--name and basic info; list, one on top of the other-->
+                    <ul class="headerName">
+                        <li>
+                            <h1 id="h1Name"> Kaitlin Saunders </h1>
+                        </li>
+                        <li>
+                            <h3 id="h3Desc"> UI/Front-End </h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+          <!--righthand header content-->
+            <div class="headerNavLinks">
+            <div class="col-1-5">
+                <div class="content">
+                    <a href="https://drive.google.com/file/d/0BzdKXb59uZdRZkplU203bDJtYkE/view?usp=sharing" target="_blank">
+résumé
+</a>
+                </div>
+            </div>
+            <div class="col-1-5">
+                <div class="content">
+                    <a href="views/work.html">
+work
+</a>
+                </div>
+            </div>
+            <div class="col-1-5">
+                <div class="content">
+                    <a href="contact.html" id="headerContactBtn">
+contact
+</a>
+                </div>
+            </div>
+            <div class="col-1-5">
+                <div class="content">
+                    <a href="tel:919-797-9315">
+(919) 797-9315
+</a>
+                </div>
+            </div>
+        </div>
+      </header>
 
-    <div ng-app="mainApp">
-        <ng-view></ng-view>
-    </div>
+        <main>
+            <div id="homePageWrapper">
+                <div class="aboutMe">I've had a lifelong passion for design and am dedicated to breathing life into products and pages with the power of beautiful UI and the magic of code. I have experience with technologies like the Adobe Suite, jQuery, the AngularJS framework,
+                    and Sass, and would love to work with you.
+                    <br>
+                    <a href="contact.html" class="aboutMeLink">Let's talk.</a>
+                </div>
+
+                <div data-slick='{"slidesToShow": 3, "slidesToScroll": 3}'>
+                    <div>
+                        <h3>Pearl</h3></div>
+                    <div>
+                        <h3>Do_it</h3></div>
+                    <div>
+                        <h3>widgets</h3></div>
+                </div>
+        </main>
+        <!--contact info once again-->
+        <!-- <footer>
+      <ul class="footerInfo">
+          <li>
+              Kaitlin Saunders
+          </li>
+          <li>
+              <a href="tel:919-797-9315">
+      (919) 797-9315
+    </a>
+          </li>
+          <li class="footerInfoLinks">
+              <a href="mailto:kaitlinhsaunders@gmail.com">
+                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              </a>
+              <a href="https://github.com/khsaunders" target="_blank">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/kaitlin-saunders" target="_blank">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+          </li>
+      </ul>
+  </footer> -->
 
 
-
-
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
-                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
-                <script type="text/javascript" src="assets/js/app.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 
 </html>

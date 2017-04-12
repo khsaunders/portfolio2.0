@@ -289,9 +289,13 @@
 }
 //personal styling for desktop
 .headerWrapper {
+	position: absolute;
   letter-spacing: 1px;
   width: 100%;
-  box-shadow: 1px 3px 15px rgba(48, 48, 48, 0.4);
+  margin: 0 auto 5% auto;
+	padding-bottom: 2%;
+  box-shadow: 0px 3px 15px rgba(48, 48, 48, 0.4);
+	overflow-x: hidden;
   a {
     text-decoration: none;
     cursor: pointer;
@@ -301,16 +305,19 @@
     font-size: 1.2em;
     position: relative;
     margin: 2% 5% 0 -15%;
-    left: 83%;
+    left: 80%;
     vertical-align: top;
     display: inline-block;
     #contactBtn{
       color: white;
       background-color: $tangerine;
       padding: 1% 2%;
-      border-radius: 1px;
+      border-radius: 2px;
       margin-right: 1%;
     }
+		#phoneNumber{
+			color: #A4A4A4;
+		}
     a {
       padding-right: .5em;
     }

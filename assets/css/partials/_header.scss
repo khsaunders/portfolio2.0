@@ -34,7 +34,7 @@
 }
 
 .grid:after {
-	content: "";
+	// content: "";
 	display: table;
 	clear: both;
 }
@@ -289,8 +289,7 @@
 }
 //personal styling for desktop
 .headerWrapper {
-	position: absolute;
-  letter-spacing: 1px;
+	letter-spacing: 1px;
   width: 100%;
   margin: 0 auto 5% auto;
 	padding-bottom: 2%;
